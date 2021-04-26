@@ -4040,17 +4040,17 @@ end TCL_Generic;
       <circ-port height="10" pin="360,200" width="10" x="95" y="105"/>
       <circ-port height="10" pin="360,250" width="10" x="95" y="125"/>
       <circ-port height="8" pin="240,100" width="8" x="46" y="66"/>
-      <circ-port height="8" pin="240,150" width="8" x="46" y="86"/>
-      <circ-port height="8" pin="240,200" width="8" x="46" y="106"/>
+      <circ-port height="8" pin="240,150" width="8" x="46" y="106"/>
+      <circ-port height="8" pin="240,200" width="8" x="46" y="86"/>
       <circ-port height="8" pin="240,250" width="8" x="46" y="126"/>
       <circ-port height="8" pin="280,290" width="8" x="56" y="156"/>
       <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="110" stroke="#000000" stroke-width="2" width="50" x="50" y="50"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="76" y="142">Flags</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="59" y="110">E</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="59" y="110">A</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="59" y="70">C</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="59" y="90">E</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="60" y="130">Z</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="60" y="90">A</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="61" y="150">S</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="74" y="69">-&gt;</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="75" y="109">-&gt;</text>
