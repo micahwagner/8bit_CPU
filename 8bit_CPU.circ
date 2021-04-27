@@ -188,9 +188,17 @@ end TCL_Generic;
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
+    <comp lib="0" loc="(1020,850)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(1030,180)" name="Pin">
       <a name="output" val="true"/>
       <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1070,720)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(1100,140)" name="Splitter">
       <a name="facing" val="north"/>
@@ -207,6 +215,11 @@ end TCL_Generic;
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(1200,840)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(1280,140)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="north"/>
@@ -220,6 +233,23 @@ end TCL_Generic;
     <comp lib="0" loc="(1370,140)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="north"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1490,140)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1530,720)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(1570,740)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1650,710)" name="Splitter">
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
@@ -250,26 +280,14 @@ end TCL_Generic;
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(460,220)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(510,610)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(510,610)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(520,340)" name="Clock"/>
     <comp lib="0" loc="(720,150)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="0" loc="(730,200)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(800,250)" name="Power">
-      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(820,150)" name="Splitter">
       <a name="facing" val="north"/>
@@ -283,25 +301,24 @@ end TCL_Generic;
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(890,850)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
     <comp lib="0" loc="(920,140)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(930,150)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(950,270)" name="Power">
-      <a name="facing" val="south"/>
-    </comp>
     <comp loc="(1020,150)" name="cpu_r"/>
-    <comp loc="(1140,780)" name="cpu_r_ir"/>
+    <comp loc="(1020,810)" name="cpu_r_iar"/>
     <comp loc="(1170,150)" name="cpu_r"/>
+    <comp loc="(1200,790)" name="cpu_r_ir"/>
     <comp loc="(1320,150)" name="cpu_r"/>
     <comp loc="(1380,320)" name="cpu_control_unit"/>
-    <comp loc="(1650,310)" name="cpu_ram_256"/>
+    <comp loc="(1650,710)" name="cpu_ram_256"/>
     <comp loc="(280,600)" name="cpu_alu">
       <a name="facing" val="south"/>
     </comp>
@@ -311,50 +328,91 @@ end TCL_Generic;
     <comp loc="(550,520)" name="cpu_flags"/>
     <comp loc="(610,360)" name="cpu_clock"/>
     <comp loc="(870,160)" name="cpu_r"/>
-    <comp loc="(930,770)" name="cpu_r_iar"/>
     <wire from="(1000,100)" to="(1000,130)"/>
     <wire from="(1000,100)" to="(1080,100)"/>
     <wire from="(1010,110)" to="(1010,130)"/>
     <wire from="(1010,110)" to="(1090,110)"/>
     <wire from="(1020,40)" to="(1020,120)"/>
     <wire from="(1020,40)" to="(1180,40)"/>
+    <wire from="(1020,810)" to="(1020,850)"/>
     <wire from="(1030,50)" to="(1030,120)"/>
     <wire from="(1030,50)" to="(1190,50)"/>
+    <wire from="(1030,710)" to="(1030,720)"/>
+    <wire from="(1030,710)" to="(1070,710)"/>
+    <wire from="(1030,870)" to="(1030,960)"/>
+    <wire from="(1030,960)" to="(1210,960)"/>
     <wire from="(1040,60)" to="(1040,120)"/>
     <wire from="(1040,60)" to="(1200,60)"/>
+    <wire from="(1040,870)" to="(1040,950)"/>
+    <wire from="(1040,950)" to="(1220,950)"/>
     <wire from="(1050,70)" to="(1050,120)"/>
     <wire from="(1050,70)" to="(1210,70)"/>
+    <wire from="(1050,870)" to="(1050,940)"/>
+    <wire from="(1050,940)" to="(1230,940)"/>
     <wire from="(1060,80)" to="(1060,120)"/>
     <wire from="(1060,80)" to="(1220,80)"/>
+    <wire from="(1060,870)" to="(1060,930)"/>
+    <wire from="(1060,930)" to="(1240,930)"/>
+    <wire from="(1070,710)" to="(1070,720)"/>
+    <wire from="(1070,870)" to="(1070,920)"/>
     <wire from="(1070,90)" to="(1070,120)"/>
     <wire from="(1070,90)" to="(1230,90)"/>
+    <wire from="(1070,920)" to="(1250,920)"/>
     <wire from="(1080,100)" to="(1080,120)"/>
     <wire from="(1080,100)" to="(1240,100)"/>
+    <wire from="(1080,870)" to="(1080,910)"/>
+    <wire from="(1080,910)" to="(1260,910)"/>
     <wire from="(1090,110)" to="(1090,120)"/>
     <wire from="(1090,110)" to="(1250,110)"/>
+    <wire from="(1090,870)" to="(1090,900)"/>
+    <wire from="(1090,900)" to="(1270,900)"/>
     <wire from="(1100,140)" to="(1100,150)"/>
     <wire from="(1100,240)" to="(1100,300)"/>
+    <wire from="(1100,870)" to="(1100,890)"/>
+    <wire from="(1100,890)" to="(1280,890)"/>
     <wire from="(1140,240)" to="(1140,300)"/>
     <wire from="(1170,140)" to="(1170,150)"/>
     <wire from="(1180,40)" to="(1180,120)"/>
     <wire from="(1180,40)" to="(1290,40)"/>
+    <wire from="(1180,700)" to="(1180,720)"/>
+    <wire from="(1180,720)" to="(1200,720)"/>
     <wire from="(1190,50)" to="(1190,120)"/>
     <wire from="(1190,50)" to="(1300,50)"/>
     <wire from="(1200,60)" to="(1200,120)"/>
     <wire from="(1200,60)" to="(1310,60)"/>
+    <wire from="(1200,720)" to="(1200,790)"/>
     <wire from="(1210,70)" to="(1210,120)"/>
     <wire from="(1210,70)" to="(1320,70)"/>
+    <wire from="(1210,860)" to="(1210,960)"/>
+    <wire from="(1210,960)" to="(1770,960)"/>
     <wire from="(1220,80)" to="(1220,120)"/>
     <wire from="(1220,80)" to="(1330,80)"/>
+    <wire from="(1220,860)" to="(1220,950)"/>
+    <wire from="(1220,950)" to="(1760,950)"/>
+    <wire from="(1230,860)" to="(1230,940)"/>
     <wire from="(1230,90)" to="(1230,120)"/>
     <wire from="(1230,90)" to="(1340,90)"/>
+    <wire from="(1230,940)" to="(1750,940)"/>
     <wire from="(1240,100)" to="(1240,120)"/>
     <wire from="(1240,100)" to="(1350,100)"/>
+    <wire from="(1240,710)" to="(1240,790)"/>
+    <wire from="(1240,710)" to="(1250,710)"/>
+    <wire from="(1240,860)" to="(1240,930)"/>
+    <wire from="(1240,930)" to="(1740,930)"/>
     <wire from="(1250,110)" to="(1250,120)"/>
     <wire from="(1250,110)" to="(1360,110)"/>
     <wire from="(1250,140)" to="(1250,150)"/>
     <wire from="(1250,140)" to="(1280,140)"/>
     <wire from="(1250,240)" to="(1250,300)"/>
+    <wire from="(1250,700)" to="(1250,710)"/>
+    <wire from="(1250,860)" to="(1250,920)"/>
+    <wire from="(1250,920)" to="(1730,920)"/>
+    <wire from="(1260,860)" to="(1260,910)"/>
+    <wire from="(1260,910)" to="(1720,910)"/>
+    <wire from="(1270,860)" to="(1270,900)"/>
+    <wire from="(1270,900)" to="(1710,900)"/>
+    <wire from="(1280,860)" to="(1280,890)"/>
+    <wire from="(1280,890)" to="(1700,890)"/>
     <wire from="(1290,240)" to="(1290,300)"/>
     <wire from="(1290,40)" to="(1290,120)"/>
     <wire from="(1290,40)" to="(1380,40)"/>
@@ -374,50 +432,92 @@ end TCL_Generic;
     <wire from="(1360,110)" to="(1360,120)"/>
     <wire from="(1360,110)" to="(1450,110)"/>
     <wire from="(1370,140)" to="(1370,150)"/>
+    <wire from="(1380,320)" to="(1470,320)"/>
     <wire from="(1380,40)" to="(1380,120)"/>
-    <wire from="(1380,40)" to="(1770,40)"/>
+    <wire from="(1380,40)" to="(1500,40)"/>
+    <wire from="(1380,660)" to="(1390,660)"/>
+    <wire from="(1380,680)" to="(1530,680)"/>
     <wire from="(1390,50)" to="(1390,120)"/>
-    <wire from="(1390,50)" to="(1760,50)"/>
+    <wire from="(1390,50)" to="(1510,50)"/>
+    <wire from="(1390,650)" to="(1390,660)"/>
+    <wire from="(1390,650)" to="(1530,650)"/>
     <wire from="(140,350)" to="(140,960)"/>
     <wire from="(140,350)" to="(230,350)"/>
     <wire from="(140,40)" to="(140,350)"/>
     <wire from="(140,40)" to="(230,40)"/>
     <wire from="(140,960)" to="(340,960)"/>
     <wire from="(1400,60)" to="(1400,120)"/>
-    <wire from="(1400,60)" to="(1750,60)"/>
+    <wire from="(1400,60)" to="(1520,60)"/>
     <wire from="(1410,70)" to="(1410,120)"/>
-    <wire from="(1410,70)" to="(1740,70)"/>
+    <wire from="(1410,70)" to="(1530,70)"/>
     <wire from="(1420,80)" to="(1420,120)"/>
-    <wire from="(1420,80)" to="(1730,80)"/>
+    <wire from="(1420,80)" to="(1540,80)"/>
     <wire from="(1430,90)" to="(1430,120)"/>
-    <wire from="(1430,90)" to="(1720,90)"/>
+    <wire from="(1430,90)" to="(1550,90)"/>
     <wire from="(1440,100)" to="(1440,120)"/>
-    <wire from="(1440,100)" to="(1710,100)"/>
+    <wire from="(1440,100)" to="(1560,100)"/>
     <wire from="(1450,110)" to="(1450,120)"/>
-    <wire from="(1450,110)" to="(1700,110)"/>
+    <wire from="(1450,110)" to="(1570,110)"/>
+    <wire from="(1470,270)" to="(1470,320)"/>
+    <wire from="(1470,270)" to="(1530,270)"/>
+    <wire from="(1490,140)" to="(1490,240)"/>
+    <wire from="(1490,240)" to="(1530,240)"/>
     <wire from="(150,340)" to="(150,950)"/>
     <wire from="(150,340)" to="(230,340)"/>
     <wire from="(150,50)" to="(150,340)"/>
     <wire from="(150,50)" to="(240,50)"/>
     <wire from="(150,950)" to="(350,950)"/>
+    <wire from="(1500,40)" to="(1500,120)"/>
+    <wire from="(1500,40)" to="(1770,40)"/>
+    <wire from="(1510,50)" to="(1510,120)"/>
+    <wire from="(1510,50)" to="(1760,50)"/>
+    <wire from="(1520,60)" to="(1520,120)"/>
+    <wire from="(1520,60)" to="(1750,60)"/>
+    <wire from="(1530,70)" to="(1530,120)"/>
+    <wire from="(1530,70)" to="(1740,70)"/>
+    <wire from="(1540,80)" to="(1540,120)"/>
+    <wire from="(1540,80)" to="(1730,80)"/>
+    <wire from="(1550,90)" to="(1550,120)"/>
+    <wire from="(1550,90)" to="(1720,90)"/>
+    <wire from="(1560,100)" to="(1560,120)"/>
+    <wire from="(1560,100)" to="(1710,100)"/>
+    <wire from="(1570,110)" to="(1570,120)"/>
+    <wire from="(1570,110)" to="(1700,110)"/>
+    <wire from="(1570,730)" to="(1570,740)"/>
     <wire from="(160,330)" to="(160,940)"/>
     <wire from="(160,330)" to="(230,330)"/>
     <wire from="(160,60)" to="(160,330)"/>
     <wire from="(160,60)" to="(250,60)"/>
     <wire from="(160,940)" to="(360,940)"/>
+    <wire from="(1670,630)" to="(1700,630)"/>
+    <wire from="(1670,640)" to="(1710,640)"/>
+    <wire from="(1670,650)" to="(1720,650)"/>
+    <wire from="(1670,660)" to="(1730,660)"/>
+    <wire from="(1670,670)" to="(1740,670)"/>
+    <wire from="(1670,680)" to="(1750,680)"/>
+    <wire from="(1670,690)" to="(1760,690)"/>
+    <wire from="(1670,700)" to="(1770,700)"/>
     <wire from="(170,320)" to="(170,930)"/>
     <wire from="(170,320)" to="(230,320)"/>
     <wire from="(170,70)" to="(170,320)"/>
     <wire from="(170,70)" to="(260,70)"/>
     <wire from="(170,930)" to="(370,930)"/>
-    <wire from="(1700,110)" to="(1700,890)"/>
-    <wire from="(1710,100)" to="(1710,900)"/>
-    <wire from="(1720,90)" to="(1720,910)"/>
-    <wire from="(1730,80)" to="(1730,920)"/>
-    <wire from="(1740,70)" to="(1740,930)"/>
-    <wire from="(1750,60)" to="(1750,940)"/>
-    <wire from="(1760,50)" to="(1760,950)"/>
-    <wire from="(1770,40)" to="(1770,960)"/>
+    <wire from="(1700,110)" to="(1700,630)"/>
+    <wire from="(1700,630)" to="(1700,890)"/>
+    <wire from="(1710,100)" to="(1710,640)"/>
+    <wire from="(1710,640)" to="(1710,900)"/>
+    <wire from="(1720,650)" to="(1720,910)"/>
+    <wire from="(1720,90)" to="(1720,650)"/>
+    <wire from="(1730,660)" to="(1730,920)"/>
+    <wire from="(1730,80)" to="(1730,660)"/>
+    <wire from="(1740,670)" to="(1740,930)"/>
+    <wire from="(1740,70)" to="(1740,670)"/>
+    <wire from="(1750,60)" to="(1750,680)"/>
+    <wire from="(1750,680)" to="(1750,940)"/>
+    <wire from="(1760,50)" to="(1760,690)"/>
+    <wire from="(1760,690)" to="(1760,950)"/>
+    <wire from="(1770,40)" to="(1770,700)"/>
+    <wire from="(1770,700)" to="(1770,960)"/>
     <wire from="(180,310)" to="(180,920)"/>
     <wire from="(180,310)" to="(230,310)"/>
     <wire from="(180,80)" to="(180,310)"/>
@@ -463,18 +563,18 @@ end TCL_Generic;
     <wire from="(330,620)" to="(330,690)"/>
     <wire from="(330,780)" to="(330,820)"/>
     <wire from="(340,840)" to="(340,960)"/>
-    <wire from="(340,960)" to="(1770,960)"/>
+    <wire from="(340,960)" to="(810,960)"/>
     <wire from="(350,200)" to="(350,210)"/>
     <wire from="(350,840)" to="(350,950)"/>
-    <wire from="(350,950)" to="(1760,950)"/>
+    <wire from="(350,950)" to="(820,950)"/>
     <wire from="(360,260)" to="(360,280)"/>
     <wire from="(360,840)" to="(360,940)"/>
-    <wire from="(360,940)" to="(1750,940)"/>
+    <wire from="(360,940)" to="(830,940)"/>
     <wire from="(370,150)" to="(610,150)"/>
     <wire from="(370,840)" to="(370,930)"/>
-    <wire from="(370,930)" to="(1740,930)"/>
+    <wire from="(370,930)" to="(840,930)"/>
     <wire from="(380,840)" to="(380,920)"/>
-    <wire from="(380,920)" to="(1730,920)"/>
+    <wire from="(380,920)" to="(850,920)"/>
     <wire from="(390,310)" to="(430,310)"/>
     <wire from="(390,330)" to="(430,330)"/>
     <wire from="(390,350)" to="(430,350)"/>
@@ -484,14 +584,16 @@ end TCL_Generic;
     <wire from="(390,560)" to="(500,560)"/>
     <wire from="(390,580)" to="(500,580)"/>
     <wire from="(390,840)" to="(390,910)"/>
-    <wire from="(390,910)" to="(1720,910)"/>
+    <wire from="(390,910)" to="(860,910)"/>
     <wire from="(400,750)" to="(800,750)"/>
     <wire from="(400,770)" to="(760,770)"/>
     <wire from="(400,840)" to="(400,900)"/>
-    <wire from="(400,900)" to="(1710,900)"/>
-    <wire from="(410,220)" to="(460,220)"/>
+    <wire from="(400,900)" to="(870,900)"/>
+    <wire from="(410,220)" to="(490,220)"/>
     <wire from="(410,840)" to="(410,890)"/>
-    <wire from="(410,890)" to="(1700,890)"/>
+    <wire from="(410,890)" to="(880,890)"/>
+    <wire from="(490,220)" to="(490,450)"/>
+    <wire from="(490,450)" to="(740,450)"/>
     <wire from="(520,340)" to="(550,340)"/>
     <wire from="(550,520)" to="(580,520)"/>
     <wire from="(550,540)" to="(740,540)"/>
@@ -520,12 +622,12 @@ end TCL_Generic;
     <wire from="(700,100)" to="(800,100)"/>
     <wire from="(710,110)" to="(710,130)"/>
     <wire from="(710,110)" to="(810,110)"/>
+    <wire from="(720,150)" to="(720,160)"/>
+    <wire from="(720,160)" to="(800,160)"/>
     <wire from="(720,360)" to="(720,370)"/>
     <wire from="(720,370)" to="(730,370)"/>
     <wire from="(720,380)" to="(720,410)"/>
     <wire from="(720,410)" to="(740,410)"/>
-    <wire from="(730,160)" to="(730,200)"/>
-    <wire from="(730,160)" to="(800,160)"/>
     <wire from="(730,340)" to="(730,350)"/>
     <wire from="(730,350)" to="(740,350)"/>
     <wire from="(730,370)" to="(730,380)"/>
@@ -546,37 +648,58 @@ end TCL_Generic;
     <wire from="(790,90)" to="(890,90)"/>
     <wire from="(800,100)" to="(800,130)"/>
     <wire from="(800,100)" to="(900,100)"/>
+    <wire from="(800,250)" to="(800,300)"/>
     <wire from="(800,700)" to="(800,750)"/>
     <wire from="(810,110)" to="(810,130)"/>
     <wire from="(810,110)" to="(910,110)"/>
+    <wire from="(810,870)" to="(810,960)"/>
+    <wire from="(810,960)" to="(1030,960)"/>
     <wire from="(820,150)" to="(870,150)"/>
+    <wire from="(820,870)" to="(820,950)"/>
+    <wire from="(820,950)" to="(1040,950)"/>
+    <wire from="(830,870)" to="(830,940)"/>
+    <wire from="(830,940)" to="(1050,940)"/>
     <wire from="(840,250)" to="(840,300)"/>
     <wire from="(840,40)" to="(840,120)"/>
     <wire from="(840,40)" to="(940,40)"/>
+    <wire from="(840,870)" to="(840,930)"/>
+    <wire from="(840,930)" to="(1060,930)"/>
     <wire from="(850,50)" to="(850,120)"/>
     <wire from="(850,50)" to="(950,50)"/>
+    <wire from="(850,870)" to="(850,920)"/>
+    <wire from="(850,920)" to="(1070,920)"/>
     <wire from="(860,60)" to="(860,120)"/>
     <wire from="(860,60)" to="(960,60)"/>
+    <wire from="(860,870)" to="(860,910)"/>
+    <wire from="(860,910)" to="(1080,910)"/>
     <wire from="(870,150)" to="(870,160)"/>
     <wire from="(870,70)" to="(870,120)"/>
     <wire from="(870,70)" to="(970,70)"/>
     <wire from="(870,700)" to="(870,720)"/>
+    <wire from="(870,870)" to="(870,900)"/>
+    <wire from="(870,900)" to="(1090,900)"/>
     <wire from="(880,80)" to="(880,120)"/>
     <wire from="(880,80)" to="(980,80)"/>
+    <wire from="(880,870)" to="(880,890)"/>
+    <wire from="(880,890)" to="(1100,890)"/>
+    <wire from="(890,850)" to="(960,850)"/>
     <wire from="(890,90)" to="(890,120)"/>
     <wire from="(890,90)" to="(990,90)"/>
     <wire from="(900,100)" to="(1000,100)"/>
     <wire from="(900,100)" to="(900,120)"/>
     <wire from="(910,110)" to="(1010,110)"/>
     <wire from="(910,110)" to="(910,120)"/>
-    <wire from="(930,150)" to="(950,150)"/>
+    <wire from="(920,140)" to="(920,150)"/>
+    <wire from="(920,150)" to="(950,150)"/>
     <wire from="(940,40)" to="(1020,40)"/>
     <wire from="(940,40)" to="(940,130)"/>
-    <wire from="(950,240)" to="(950,270)"/>
+    <wire from="(950,240)" to="(950,300)"/>
     <wire from="(950,50)" to="(1030,50)"/>
     <wire from="(950,50)" to="(950,130)"/>
     <wire from="(960,60)" to="(1040,60)"/>
     <wire from="(960,60)" to="(960,130)"/>
+    <wire from="(960,700)" to="(960,720)"/>
+    <wire from="(960,810)" to="(960,850)"/>
     <wire from="(970,70)" to="(1050,70)"/>
     <wire from="(970,70)" to="(970,130)"/>
     <wire from="(980,80)" to="(1060,80)"/>
@@ -1376,25 +1499,27 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="167" y="57"/>
-      <circ-port height="10" pin="220,60" width="10" x="165" y="55"/>
-      <circ-port height="8" pin="110,450" width="8" x="76" y="486"/>
-      <circ-port height="8" pin="110,480" width="8" x="116" y="486"/>
-      <circ-port height="8" pin="220,110" width="8" x="136" y="486"/>
-      <circ-port height="8" pin="220,140" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="220,260" width="8" x="46" y="116"/>
-      <circ-port height="8" pin="230,300" width="8" x="46" y="136"/>
-      <path d="M96,52 Q100,62 104,52" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="440" stroke="#000000" stroke-width="2" width="120" x="50" y="50"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="109" y="204">RAM</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="217">256</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="120" y="481">E</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="140" y="481">R</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="159" y="60">O</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="64" y="140">W</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="70" y="120">ADR</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="71" y="80">DATA</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="80" y="480">S</text>
+      <circ-anchor facing="east" height="6" width="6" x="177" y="507"/>
+      <circ-port height="10" pin="220,60" width="10" x="175" y="505"/>
+      <circ-port height="8" pin="110,450" width="8" x="56" y="476"/>
+      <circ-port height="8" pin="110,480" width="8" x="56" y="446"/>
+      <circ-port height="8" pin="220,110" width="8" x="56" y="516"/>
+      <circ-port height="8" pin="220,140" width="8" x="96" y="526"/>
+      <circ-port height="8" pin="220,260" width="8" x="56" y="36"/>
+      <circ-port height="8" pin="230,300" width="8" x="56" y="66"/>
+      <path d="M106,92 Q110,102 114,92" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="440" stroke="#000000" stroke-width="2" width="120" x="60" y="90"/>
+      <rect fill="none" height="68" stroke="#000000" stroke-width="2" width="120" x="60" y="21"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="119" y="244">RAM</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="257">256</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="54">MAR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="170" y="510">O</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="68" y="451">E</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="68" y="480">S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="69" y="521">R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="71" y="70">S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="76" y="41">ADR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="99" y="519">DATA</text>
     </appear>
     <comp lib="0" loc="(110,450)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -2732,7 +2857,7 @@ end TCL_Generic;
       <circ-port height="8" pin="420,50" width="8" x="46" y="126"/>
       <path d="M76,101 Q80,111 84,101" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="60" x="50" y="100"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="80" y="114">SHR</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="80" y="114">SHL</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="102" y="110">O</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="59" y="110">i</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="60" y="130">Si</text>
@@ -3936,27 +4061,20 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="187" y="47"/>
-      <circ-port height="10" pin="130,100" width="10" x="185" y="65"/>
-      <circ-port height="10" pin="240,70" width="10" x="185" y="45"/>
-      <circ-port height="8" pin="130,70" width="8" x="96" y="46"/>
-      <circ-port height="8" pin="200,160" width="8" x="96" y="76"/>
-      <circ-port height="8" pin="220,160" width="8" x="96" y="96"/>
+      <circ-anchor facing="east" height="6" width="6" x="167" y="127"/>
+      <circ-port height="10" pin="240,70" width="10" x="165" y="125"/>
+      <circ-port height="8" pin="130,70" width="8" x="106" y="126"/>
+      <circ-port height="8" pin="200,160" width="8" x="176" y="36"/>
+      <circ-port height="8" pin="220,160" width="8" x="106" y="36"/>
       <path d="M141,41 Q145,51 149,41" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="90" stroke="#000000" stroke-width="2" width="90" x="100" y="40"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="145" y="73">iar</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="55">CPU_R</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="108" y="50">i</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="109" y="101">E</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="109" y="80">S</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="180" y="50">O</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="181" y="71">R</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="109" y="51">E</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="110" y="120">i</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="170" y="120">O</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="179" y="50">S</text>
     </appear>
-    <comp lib="0" loc="(130,100)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(130,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="width" val="8"/>
@@ -3973,10 +4091,10 @@ end TCL_Generic;
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="pull" val="down"/>
       <a name="width" val="8"/>
     </comp>
     <comp loc="(240,70)" name="cpu_reg_8"/>
-    <wire from="(130,100)" to="(180,100)"/>
     <wire from="(130,70)" to="(180,70)"/>
     <wire from="(200,120)" to="(200,160)"/>
     <wire from="(220,120)" to="(220,160)"/>
@@ -3990,16 +4108,16 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="107" y="57"/>
-      <circ-port height="10" pin="400,120" width="10" x="105" y="55"/>
-      <circ-port height="8" pin="320,120" width="8" x="46" y="56"/>
-      <circ-port height="8" pin="360,170" width="8" x="46" y="76"/>
+      <circ-anchor facing="east" height="6" width="6" x="57" y="47"/>
+      <circ-port height="10" pin="400,120" width="10" x="55" y="45"/>
+      <circ-port height="8" pin="320,120" width="8" x="56" y="96"/>
+      <circ-port height="8" pin="360,170" width="8" x="96" y="46"/>
       <path d="M77,51 Q81,61 85,51" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="50" stroke="#000000" stroke-width="2" width="60" x="50" y="50"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="81" y="69">ir</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="100" y="60">O</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="56" y="60">i</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="58" y="80">S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="100" y="60">S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="60" y="60">O</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="60" y="92">i</text>
     </appear>
     <comp lib="0" loc="(320,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -4405,46 +4523,56 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="east"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="697" y="137"/>
-      <circ-port height="10" pin="1030,300" width="10" x="695" y="135"/>
-      <circ-port height="10" pin="1030,360" width="10" x="75" y="515"/>
-      <circ-port height="10" pin="1030,420" width="10" x="695" y="495"/>
-      <circ-port height="10" pin="1030,480" width="10" x="75" y="115"/>
-      <circ-port height="10" pin="1030,540" width="10" x="115" y="115"/>
-      <circ-port height="10" pin="1030,600" width="10" x="265" y="115"/>
-      <circ-port height="10" pin="1030,660" width="10" x="415" y="115"/>
-      <circ-port height="10" pin="1030,720" width="10" x="565" y="115"/>
-      <circ-port height="10" pin="320,310" width="10" x="695" y="475"/>
-      <circ-port height="10" pin="320,370" width="10" x="115" y="515"/>
-      <circ-port height="10" pin="320,600" width="10" x="155" y="115"/>
-      <circ-port height="10" pin="320,660" width="10" x="305" y="115"/>
-      <circ-port height="10" pin="320,720" width="10" x="455" y="115"/>
-      <circ-port height="10" pin="320,780" width="10" x="605" y="115"/>
-      <circ-port height="8" pin="180,120" width="8" x="56" y="166"/>
-      <circ-port height="8" pin="180,150" width="8" x="56" y="196"/>
-      <circ-port height="8" pin="180,180" width="8" x="56" y="226"/>
-      <circ-port height="8" pin="790,30" width="8" x="186" y="516"/>
-      <path d="M365,121 Q369,131 373,121" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="400" stroke="#000000" stroke-width="2" width="640" x="60" y="120"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="102" y="512">ACC_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="132" y="137">R0_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="140" y="512">ACC_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="172" y="137">R0_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="283" y="139">R1_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="325" y="137">R1_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="432" y="138">R2_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="472" y="139">R2_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="580" y="138">R3_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="621" y="137">R3_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="688" y="484">RAM_E</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="689" y="503">RAM_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="690" y="143">MAR_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="99" y="136">TMP_S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="174">clks</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="204">clk</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="234">clke</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="18" text-anchor="middle" x="380" y="307">CONTROL_UNIT</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="189" y="509">Refresh</text>
+      <circ-anchor facing="east" height="6" width="6" x="697" y="67"/>
+      <circ-port height="10" pin="1030,300" width="10" x="695" y="65"/>
+      <circ-port height="10" pin="1030,360" width="10" x="75" y="445"/>
+      <circ-port height="10" pin="1030,420" width="10" x="695" y="425"/>
+      <circ-port height="10" pin="1030,480" width="10" x="75" y="45"/>
+      <circ-port height="10" pin="1030,540" width="10" x="115" y="45"/>
+      <circ-port height="10" pin="1030,600" width="10" x="265" y="45"/>
+      <circ-port height="10" pin="1030,660" width="10" x="415" y="45"/>
+      <circ-port height="10" pin="1030,720" width="10" x="565" y="45"/>
+      <circ-port height="10" pin="1030,780" width="10" x="565" y="445"/>
+      <circ-port height="10" pin="1030,840" width="10" x="345" y="445"/>
+      <circ-port height="10" pin="320,310" width="10" x="695" y="405"/>
+      <circ-port height="10" pin="320,370" width="10" x="115" y="445"/>
+      <circ-port height="10" pin="320,430" width="10" x="275" y="445"/>
+      <circ-port height="10" pin="320,600" width="10" x="155" y="45"/>
+      <circ-port height="10" pin="320,660" width="10" x="305" y="45"/>
+      <circ-port height="10" pin="320,720" width="10" x="455" y="45"/>
+      <circ-port height="10" pin="320,780" width="10" x="605" y="45"/>
+      <circ-port height="10" pin="370,220" width="10" x="55" y="195"/>
+      <circ-port height="8" pin="180,120" width="8" x="56" y="96"/>
+      <circ-port height="8" pin="180,150" width="8" x="56" y="126"/>
+      <circ-port height="8" pin="180,180" width="8" x="56" y="156"/>
+      <circ-port height="8" pin="700,920" width="8" x="496" y="446"/>
+      <circ-port height="8" pin="790,30" width="8" x="186" y="446"/>
+      <path d="M365,51 Q369,61 373,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="400" stroke="#000000" stroke-width="2" width="640" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="102" y="442">ACC_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="132" y="67">R0_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="140" y="442">ACC_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="172" y="67">R0_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="283" y="69">R1_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="325" y="67">R1_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="432" y="68">R2_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="472" y="69">R2_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="580" y="68">R3_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="621" y="67">R3_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="688" y="414">RAM_E</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="689" y="433">RAM_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="690" y="73">MAR_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="10" text-anchor="end" x="99" y="66">TMP_S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="104">clks</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="134">clk</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="164">clke</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="283" y="433">IAR_E</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="352" y="434">IAR_S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="499" y="438">IR_IN</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="571" y="438">IR_S</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="201">BUS</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="18" text-anchor="middle" x="380" y="237">CONTROL_UNIT</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="189" y="439">Refresh</text>
     </appear>
     <comp lib="0" loc="(1030,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -4494,6 +4622,18 @@ end TCL_Generic;
       <a name="label" val="R3_S"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(1030,780)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="IR_S"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1030,840)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="IAR_S"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(180,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="clks"/>
@@ -4516,6 +4656,11 @@ end TCL_Generic;
       <a name="label" val="ACC_E"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(320,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="IAR_E"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(320,600)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="R0_E"/>
@@ -4536,8 +4681,16 @@ end TCL_Generic;
       <a name="label" val="R3_E"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(370,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(450,820)" name="Ground"/>
-    <comp lib="0" loc="(460,340)" name="Ground"/>
+    <comp lib="0" loc="(700,920)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="IR_IN"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(790,30)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Refresh"/>
@@ -4551,10 +4704,15 @@ end TCL_Generic;
     <comp lib="1" loc="(1000,600)" name="AND Gate"/>
     <comp lib="1" loc="(1000,660)" name="AND Gate"/>
     <comp lib="1" loc="(1000,720)" name="AND Gate"/>
+    <comp lib="1" loc="(1000,780)" name="AND Gate"/>
+    <comp lib="1" loc="(1000,840)" name="AND Gate"/>
     <comp lib="1" loc="(350,310)" name="AND Gate">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(350,370)" name="AND Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(350,430)" name="AND Gate">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(350,600)" name="AND Gate">
@@ -4581,45 +4739,59 @@ end TCL_Generic;
     <wire from="(1000,600)" to="(1030,600)"/>
     <wire from="(1000,660)" to="(1030,660)"/>
     <wire from="(1000,720)" to="(1030,720)"/>
+    <wire from="(1000,780)" to="(1030,780)"/>
+    <wire from="(1000,840)" to="(1030,840)"/>
     <wire from="(180,120)" to="(930,120)"/>
     <wire from="(180,150)" to="(530,150)"/>
     <wire from="(180,180)" to="(420,180)"/>
     <wire from="(320,310)" to="(350,310)"/>
     <wire from="(320,370)" to="(350,370)"/>
+    <wire from="(320,430)" to="(350,430)"/>
     <wire from="(320,600)" to="(350,600)"/>
     <wire from="(320,660)" to="(350,660)"/>
     <wire from="(320,720)" to="(350,720)"/>
     <wire from="(320,780)" to="(350,780)"/>
+    <wire from="(370,220)" to="(540,220)"/>
     <wire from="(400,290)" to="(420,290)"/>
-    <wire from="(400,330)" to="(460,330)"/>
+    <wire from="(400,330)" to="(580,330)"/>
     <wire from="(400,350)" to="(420,350)"/>
-    <wire from="(400,390)" to="(740,390)"/>
+    <wire from="(400,390)" to="(620,390)"/>
+    <wire from="(400,410)" to="(420,410)"/>
+    <wire from="(400,450)" to="(540,450)"/>
     <wire from="(400,580)" to="(420,580)"/>
-    <wire from="(400,620)" to="(700,620)"/>
+    <wire from="(400,620)" to="(450,620)"/>
     <wire from="(400,640)" to="(420,640)"/>
-    <wire from="(400,680)" to="(660,680)"/>
+    <wire from="(400,680)" to="(450,680)"/>
     <wire from="(400,700)" to="(420,700)"/>
     <wire from="(400,740)" to="(450,740)"/>
     <wire from="(400,760)" to="(420,760)"/>
     <wire from="(400,800)" to="(450,800)"/>
     <wire from="(420,180)" to="(420,290)"/>
     <wire from="(420,290)" to="(420,350)"/>
-    <wire from="(420,350)" to="(420,580)"/>
+    <wire from="(420,350)" to="(420,410)"/>
+    <wire from="(420,410)" to="(420,580)"/>
     <wire from="(420,580)" to="(420,640)"/>
     <wire from="(420,640)" to="(420,700)"/>
     <wire from="(420,700)" to="(420,760)"/>
+    <wire from="(450,620)" to="(450,680)"/>
+    <wire from="(450,680)" to="(450,740)"/>
     <wire from="(450,740)" to="(450,800)"/>
     <wire from="(450,800)" to="(450,820)"/>
-    <wire from="(460,330)" to="(460,340)"/>
-    <wire from="(660,180)" to="(660,500)"/>
-    <wire from="(660,500)" to="(660,680)"/>
-    <wire from="(660,500)" to="(950,500)"/>
-    <wire from="(700,180)" to="(700,380)"/>
-    <wire from="(700,380)" to="(700,620)"/>
-    <wire from="(700,380)" to="(950,380)"/>
-    <wire from="(740,180)" to="(740,390)"/>
-    <wire from="(740,390)" to="(740,740)"/>
-    <wire from="(740,740)" to="(950,740)"/>
+    <wire from="(540,180)" to="(540,220)"/>
+    <wire from="(540,220)" to="(540,320)"/>
+    <wire from="(540,320)" to="(540,380)"/>
+    <wire from="(540,320)" to="(950,320)"/>
+    <wire from="(540,380)" to="(540,450)"/>
+    <wire from="(540,380)" to="(950,380)"/>
+    <wire from="(580,180)" to="(580,330)"/>
+    <wire from="(580,330)" to="(580,800)"/>
+    <wire from="(580,800)" to="(950,800)"/>
+    <wire from="(620,180)" to="(620,390)"/>
+    <wire from="(620,390)" to="(620,860)"/>
+    <wire from="(620,860)" to="(950,860)"/>
+    <wire from="(660,180)" to="(660,630)"/>
+    <wire from="(700,180)" to="(700,620)"/>
+    <wire from="(740,180)" to="(740,630)"/>
     <wire from="(780,180)" to="(780,190)"/>
     <wire from="(780,190)" to="(950,190)"/>
     <wire from="(790,150)" to="(850,150)"/>
@@ -4627,16 +4799,18 @@ end TCL_Generic;
     <wire from="(830,30)" to="(830,60)"/>
     <wire from="(850,110)" to="(850,150)"/>
     <wire from="(870,60)" to="(950,60)"/>
-    <wire from="(900,320)" to="(900,440)"/>
-    <wire from="(900,320)" to="(950,320)"/>
-    <wire from="(900,440)" to="(900,560)"/>
+    <wire from="(900,440)" to="(900,500)"/>
     <wire from="(900,440)" to="(950,440)"/>
+    <wire from="(900,500)" to="(900,560)"/>
+    <wire from="(900,500)" to="(950,500)"/>
     <wire from="(900,560)" to="(900,620)"/>
     <wire from="(900,560)" to="(950,560)"/>
     <wire from="(900,620)" to="(900,680)"/>
     <wire from="(900,620)" to="(950,620)"/>
-    <wire from="(900,680)" to="(900,760)"/>
+    <wire from="(900,680)" to="(900,740)"/>
     <wire from="(900,680)" to="(950,680)"/>
+    <wire from="(900,740)" to="(900,760)"/>
+    <wire from="(900,740)" to="(950,740)"/>
     <wire from="(930,120)" to="(930,280)"/>
     <wire from="(930,280)" to="(930,340)"/>
     <wire from="(930,280)" to="(950,280)"/>
@@ -4652,7 +4826,11 @@ end TCL_Generic;
     <wire from="(930,580)" to="(950,580)"/>
     <wire from="(930,640)" to="(930,700)"/>
     <wire from="(930,640)" to="(950,640)"/>
+    <wire from="(930,700)" to="(930,760)"/>
     <wire from="(930,700)" to="(950,700)"/>
+    <wire from="(930,760)" to="(930,820)"/>
+    <wire from="(930,760)" to="(950,760)"/>
+    <wire from="(930,820)" to="(950,820)"/>
     <wire from="(950,60)" to="(950,190)"/>
   </circuit>
 </project>
