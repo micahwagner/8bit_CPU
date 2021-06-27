@@ -309,6 +309,11 @@ end TCL_Generic;
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
+    <comp lib="0" loc="(950,810)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="1" loc="(1270,850)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
@@ -711,13 +716,16 @@ end TCL_Generic;
     <wire from="(870,150)" to="(870,160)"/>
     <wire from="(870,70)" to="(870,120)"/>
     <wire from="(870,70)" to="(970,70)"/>
-    <wire from="(870,700)" to="(870,720)"/>
+    <wire from="(870,700)" to="(870,710)"/>
+    <wire from="(870,710)" to="(870,720)"/>
+    <wire from="(870,710)" to="(890,710)"/>
     <wire from="(870,870)" to="(870,900)"/>
     <wire from="(870,900)" to="(1090,900)"/>
     <wire from="(880,80)" to="(880,120)"/>
     <wire from="(880,80)" to="(980,80)"/>
     <wire from="(880,870)" to="(880,890)"/>
     <wire from="(880,890)" to="(1100,890)"/>
+    <wire from="(890,700)" to="(890,710)"/>
     <wire from="(890,850)" to="(960,850)"/>
     <wire from="(890,90)" to="(890,120)"/>
     <wire from="(890,90)" to="(990,90)"/>
@@ -4076,6 +4084,7 @@ end TCL_Generic;
     <a name="clabelup" val="east"/>
     <appear>
       <circ-anchor facing="east" height="6" width="6" x="167" y="127"/>
+      <circ-port height="10" pin="160,100" width="10" x="95" y="85"/>
       <circ-port height="10" pin="240,70" width="10" x="165" y="125"/>
       <circ-port height="8" pin="130,70" width="8" x="106" y="126"/>
       <circ-port height="8" pin="200,160" width="8" x="176" y="36"/>
@@ -4083,6 +4092,7 @@ end TCL_Generic;
       <path d="M141,41 Q145,51 149,41" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="90" stroke="#000000" stroke-width="2" width="90" x="100" y="40"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="145" y="73">iar</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="111" y="91">R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="145" y="55">CPU_R</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="109" y="51">E</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="110" y="120">i</text>
@@ -4091,6 +4101,11 @@ end TCL_Generic;
     </appear>
     <comp lib="0" loc="(130,70)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(160,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(200,160)" name="Pin">
@@ -4110,6 +4125,7 @@ end TCL_Generic;
     </comp>
     <comp loc="(240,70)" name="cpu_reg_8"/>
     <wire from="(130,70)" to="(180,70)"/>
+    <wire from="(160,100)" to="(180,100)"/>
     <wire from="(200,120)" to="(200,160)"/>
     <wire from="(220,120)" to="(220,160)"/>
   </circuit>
@@ -4569,6 +4585,7 @@ end TCL_Generic;
       <circ-port height="10" pin="310,220" width="10" x="55" y="255"/>
       <circ-port height="10" pin="320,490" width="10" x="205" y="45"/>
       <circ-port height="8" pin="1460,30" width="8" x="186" y="446"/>
+      <circ-port height="8" pin="1580,90" width="8" x="206" y="446"/>
       <circ-port height="8" pin="320,120" width="8" x="56" y="166"/>
       <circ-port height="8" pin="320,150" width="8" x="56" y="196"/>
       <circ-port height="8" pin="320,180" width="8" x="56" y="226"/>
@@ -4614,11 +4631,16 @@ end TCL_Generic;
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="72" y="359">z</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="82" y="261">BUS</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="18" text-anchor="middle" x="380" y="237">CONTROL_UNIT</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="189" y="439">Refresh</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="200" y="439">Refresh</text>
     </appear>
     <comp lib="0" loc="(1460,30)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Refresh"/>
+    </comp>
+    <comp lib="0" loc="(1580,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="RESTART"/>
     </comp>
     <comp lib="0" loc="(1770,860)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -5183,7 +5205,6 @@ end TCL_Generic;
     <wire from="(1090,1320)" to="(1280,1320)"/>
     <wire from="(1090,1400)" to="(1090,1420)"/>
     <wire from="(1090,1400)" to="(1100,1400)"/>
-    <wire from="(1100,1380)" to="(1100,1390)"/>
     <wire from="(1130,1070)" to="(1140,1070)"/>
     <wire from="(1130,1110)" to="(1150,1110)"/>
     <wire from="(1130,1150)" to="(1160,1150)"/>
@@ -5237,12 +5258,13 @@ end TCL_Generic;
     <wire from="(1460,190)" to="(1460,200)"/>
     <wire from="(1460,200)" to="(1560,200)"/>
     <wire from="(1460,30)" to="(1500,30)"/>
+    <wire from="(1500,110)" to="(1500,130)"/>
+    <wire from="(1500,130)" to="(1540,130)"/>
     <wire from="(1500,150)" to="(1520,150)"/>
     <wire from="(1500,30)" to="(1500,60)"/>
     <wire from="(1510,1450)" to="(1510,1490)"/>
     <wire from="(1510,1490)" to="(1530,1490)"/>
     <wire from="(1520,110)" to="(1520,150)"/>
-    <wire from="(1520,110)" to="(1820,110)"/>
     <wire from="(1520,1440)" to="(1520,1460)"/>
     <wire from="(1520,1460)" to="(1530,1460)"/>
     <wire from="(1520,410)" to="(1520,1290)"/>
@@ -5250,13 +5272,17 @@ end TCL_Generic;
     <wire from="(1530,470)" to="(1530,770)"/>
     <wire from="(1530,770)" to="(1530,1080)"/>
     <wire from="(1530,770)" to="(1550,770)"/>
+    <wire from="(1540,110)" to="(1540,130)"/>
+    <wire from="(1540,110)" to="(1580,110)"/>
     <wire from="(1540,60)" to="(1560,60)"/>
     <wire from="(1560,60)" to="(1560,200)"/>
+    <wire from="(1580,110)" to="(1820,110)"/>
     <wire from="(1580,1440)" to="(1590,1440)"/>
     <wire from="(1580,1460)" to="(1600,1460)"/>
     <wire from="(1580,1480)" to="(1610,1480)"/>
     <wire from="(1580,1500)" to="(1620,1500)"/>
     <wire from="(1580,780)" to="(1640,780)"/>
+    <wire from="(1580,90)" to="(1580,110)"/>
     <wire from="(1590,1440)" to="(1590,1490)"/>
     <wire from="(1590,1490)" to="(1630,1490)"/>
     <wire from="(1590,480)" to="(1590,500)"/>
@@ -5426,7 +5452,7 @@ end TCL_Generic;
     <wire from="(440,350)" to="(440,410)"/>
     <wire from="(440,410)" to="(440,520)"/>
     <wire from="(440,520)" to="(440,1390)"/>
-    <wire from="(490,110)" to="(1520,110)"/>
+    <wire from="(490,110)" to="(1500,110)"/>
     <wire from="(490,110)" to="(490,270)"/>
     <wire from="(490,1400)" to="(490,1440)"/>
     <wire from="(490,1440)" to="(490,1480)"/>
